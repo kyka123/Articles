@@ -1,0 +1,30 @@
+.wrapper {
+position: relative;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 100%;
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.details {
+    font-size: 0.5rem;
+    color: rgba(255, 255, 255, 0.61);
+
+}
+
+.content {
+    width: 100%;
+}
+
+.imageWraper {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
