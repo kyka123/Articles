@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className={styles.centered}>
         Nasze najlepsze artykuły
         <button className={styles.button}>
-          Zobacz najnowsze <IoIosArrowDown />
+          Zobacz najnowsze <IoIosArrowDown className={styles.icon} />
         </button>
       </div>
     </div>

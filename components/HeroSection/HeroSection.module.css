@@ -32,12 +32,32 @@
   color: #ffffffff;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   text-decoration: none;
   min-width: 180px;
   margin: 2px 0;
   border: solid 1px transparent;
   border-radius: 4px;
-  padding: 0.7em 1em;
+  padding: 0.7em 1.2em;
   cursor: pointer;
+}
+
+.icon {
+  transition: all;
+  animation: jumpingArrow 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jumpingArrow {
+  from {
+    transform: translateY(4px);
+  }
+
+  60% {
+    transform: translateY(-2px);
+  }
+
+  to {
+    transform: translateY(4px);
+  }
 }
