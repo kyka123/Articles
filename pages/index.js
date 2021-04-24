@@ -1,5 +1,6 @@
 import Navbar from "../components/navbar/navbar.js";
 import HeroSection from "../components/HeroSection/Herosection.js";
+import Footer from "../components/Footer/Footer.js";
 
 const Home = () => (
   <div>
@@ -22,6 +23,7 @@ const Home = () => (
     <h1>Hello Word</h1>
     <h1>Hello Word</h1>
     <h1>Hello Word</h1>
+    <Footer></Footer>
   </div>
 );
 
