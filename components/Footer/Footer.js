@@ -10,12 +10,12 @@ function Footer() {
           {/* <img src="assets/footer.jpg" alt="IPG" className={styles.image} /> */}
           <div className={styles.icons_text}>
             <div className={styles.icons}>
-            <IoLogoFacebook></IoLogoFacebook>
-            <IoLogoInstagram></IoLogoInstagram>
-            <IoLogoYoutube></IoLogoYoutube>
+            <a className={styles.a} target="_blank" href="https://www.facebook.com/ALO.rzeszow/"><IoLogoFacebook className={styles.fb_icon}/></a>
+            <a className={styles.a} target="_blank" href="https://www.instagram.com/alo_rzeszow/?hl=pl"><IoLogoInstagram className={styles.ig_icon}/></a>
+            <a className={styles.a} target="_blank" href="https://www.youtube.com/channel/UCXaHPxICvAtYZUIlt9oMxsw/videos"><IoLogoYoutube className={styles.yt_icon}/></a>
             </div>
-            <h2>qwerty</h2>
-            <p>ALOOO</p>
+
+            <p className={styles.text}>© 2021. All rights reserved</p>
           </div>
                       
           </div>

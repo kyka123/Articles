@@ -1,5 +1,6 @@
 .main{
-    padding: 4rem 0 2rem 0;
+    background-color: rgb(95, 54, 27);
+    padding: 3.5rem 0 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,17 +15,43 @@
     display: block;
     top: 0;
     left: 0;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 10%;
     object-fit: cover;
     object-position: right center;
   }
 
+.icons_text{
+    color: white;
+}
+
+
 .icons{
     display: flex;
     justify-content: space-around;
+    
 }
 
-.icons_text{
+.fb_icon{
+    height: 3.6vh;
+    width: 3.6vw;
+}
 
+.ig_icon{
+    height: 3.6vh;
+    width: 3.6vw;
+}
+
+.yt_icon{
+    height: 3.6vh;
+    width: 3.6vw;
+}
+
+.a { 
+    color: white;
+}
+
+.text{
+    width: 14vw;
+    font-size: 1.4rem;
 }
