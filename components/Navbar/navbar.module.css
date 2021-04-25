@@ -29,6 +29,7 @@
 .navLinks {
   list-style-type: none;
   display: flex;
+  align-items: center;
 }
 
 .navLinksLink {
@@ -50,4 +51,15 @@
 .colored {
   color: #ffffff;
   background-color: #5f361b;
+}
+
+@media (max-width: 350px) {
+  .header {
+    margin: 0;
+    padding: 8px;
+  }
+  .navLinks {
+    padding: 0;
+  }
+
 }

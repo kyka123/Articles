@@ -2,25 +2,27 @@ import Link from "next/link";
 import styles from "./navbar.module.css";
 import { useState, useEffect } from "react";
 
-const Navbar = () => {
+const Navbar = ({scrol}) => {
   const [navbarBg, setNavbarBg] = useState(true);
+
+
 
   const changeBackground = () => {
     if (window.scrollY >= 65) {
       setNavbarBg(false);
-      console.log("false");
     } else {
       setNavbarBg(true);
-      console.log("true");
     }
   };
-
+  
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
+    changeBackground()
     return () => {
       window.removeEventListener("scroll", changeBackground);
     };
   }, []);
+
 
   return (
     <div
@@ -28,7 +30,7 @@ const Navbar = () => {
         navbarBg ? styles.header : `${styles.header} ${styles.headerBackground}`
       }
     >
-      <Link href="/lol">
+      <Link href="/">
         <a
           className={navbarBg ? `${styles.logo} ${styles.white}` : styles.logo}
         >
@@ -37,9 +39,7 @@ const Navbar = () => {
       </Link>
       <ul className={styles.navLinks}>
         <li className={styles.navLinksLink}>
-          <Link href="/">
-            <button className={styles.btn}>Przycisk</button>
-          </Link>
+           <button className={styles.btn} onClick={scrol}>Kontakt</button>
         </li>
         <li>
           <Link href="/">

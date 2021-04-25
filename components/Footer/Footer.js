@@ -1,11 +1,11 @@
 import styles from "./Footer.module.css";
-import { IoLogoFacebook } from "react-icons/io";
-import { IoLogoInstagram } from "react-icons/io";
-import { IoLogoYoutube } from "react-icons/io";
+import { IoLogoFacebook, IoLogoInstagram, IoLogoYoutube, IoIosCall, IoIosMail, IoIosPin } from "react-icons/io";
 
-function Footer() {
+
+const Footer = ({reff}) => {
   return (
-    <div className={styles.main}>
+    <div className={styles.main} >
+      <span ref={reff}></span>
       <div className={styles.icons_text}>
         <div className={styles.icons}>
           <a
@@ -31,7 +31,13 @@ function Footer() {
           </a>
         </div>
 
+        <p className={styles.text}> <IoIosCall/> (17) 866 11 43</p>
+        <p className={styles.text}> <IoIosMail/> liceum@alo.rzeszow.pl</p>
+        <p className={styles.text}> <IoIosPin/> ul. Antoniego Kopaczewskiego 2, 35-225 Rzeszów</p>
         <p className={styles.text}>© 2021. All rights reserved</p>
+
+
+
       </div>
     </div>
   );
