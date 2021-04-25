@@ -8,11 +8,18 @@
 .container {
   position: absolute;
   top: 50%;
-  left: 25px;
+  left: 10px;
   transform: translateY(-50%);
   font-family: "Playfair Display";
   text-align: left;
 }
+
+@media (min-width: 350px) {
+  .container {
+    left: 25px;
+  }
+}
+
 
 @media (min-width: 950px) {
   .container {
