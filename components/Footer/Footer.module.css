@@ -1,57 +1,37 @@
-.main{
-    background-color: rgb(95, 54, 27);
-    padding: 3.5rem 0 2rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-} 
- 
- 
- .image {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10%;
-    object-fit: cover;
-    object-position: right center;
-  }
-
-.icons_text{
-    color: white;
+.main {
+  background-image: url(/assets/footer.jpg);
+  background-size: cover;
+  background-position: top;
+  padding: 3.5rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  height: 154px;
+  width: 100%;
 }
 
-
-.icons{
-    display: flex;
-    justify-content: space-around;
-    
+.icons_text {
+  color: white;
 }
 
-.fb_icon{
-    height: 3.6vh;
-    width: 3.6vw;
+.icons {
+  display: flex;
+  justify-content: center;
 }
 
-.ig_icon{
-    height: 3.6vh;
-    width: 3.6vw;
+.icon {
+  height: 36px;
+  width: 36px;
+  margin: 20px;
 }
 
-.yt_icon{
-    height: 3.6vh;
-    width: 3.6vw;
+.a {
+  color: white;
 }
 
-.a { 
-    color: white;
-}
-
-.text{
-    width: 14vw;
-    font-size: 1.4rem;
+.text {
+  font-size: 1.4rem;
 }

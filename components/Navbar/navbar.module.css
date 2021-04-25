@@ -1,6 +1,4 @@
 .header {
-  /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -moz-tap-highlight-color: rgba(0, 0, 0, 0); */
   background: transparent;
   position: fixed;
   top: 0;
@@ -51,5 +49,5 @@
 
 .colored {
   color: #ffffff;
-  background-color: #9555af;
+  background-color: #5f361b;
 }
