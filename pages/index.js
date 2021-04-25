@@ -1,29 +1,29 @@
-import Navbar from "../components/navbar/navbar.js";
-import HeroSection from "../components/HeroSection/Herosection.js";
-import Footer from "../components/Footer/Footer.js";
+import HeroSection from "../components/HeroSection/HeroSection.js";
+
+import Layout from "../components/Layout/Layout";
 
 const Home = () => (
   <div>
-    <Navbar></Navbar>
-    <HeroSection></HeroSection>
-    <h1>Hello Word</h1>
-    <h1>Hello Word</h1>
-    <h1>Hello Word</h1>
-    <h1>Hello Word</h1>
-    <h1>Hello Word</h1>
-    <h1>Hello Word</h1>
-    <h1>Hello Word</h1>
-    <h1>Hello Word</h1>
-    <h1>Hello Word</h1>
-    <h1>Hello Word</h1>
-    <h1>Hello Word</h1>
-    <h1>Hello Word</h1>
-    <h1>Hello Word</h1>
-    <h1>Hello Word</h1>
-    <h1>Hello Word</h1>
-    <h1>Hello Word</h1>
-    <h1>Hello Word</h1>
-    <Footer></Footer>
+    <Layout withNav title="Strona Główna">
+      <HeroSection></HeroSection>
+      <h1>Hello Word</h1>
+      <h1>Hello Word</h1>
+      <h1>Hello Word</h1>
+      <h1>Hello Word</h1>
+      <h1>Hello Word</h1>
+      <h1>Hello Word</h1>
+      <h1>Hello Word</h1>
+      <h1>Hello Word</h1>
+      <h1>Hello Word</h1>
+      <h1>Hello Word</h1>
+      <h1>Hello Word</h1>
+      <h1>Hello Word</h1>
+      <h1>Hello Word</h1>
+      <h1>Hello Word</h1>
+      <h1>Hello Word</h1>
+      <h1>Hello Word</h1>
+      <h1>Hello Word</h1>
+    </Layout>
   </div>
 );
 

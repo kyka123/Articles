@@ -1,19 +1,31 @@
-.container {
+.wrapper {
   position: relative;
   text-align: center;
   color: white;
   width: 100vw;
   height: 100vh;
 }
-.centered {
+.container {
   position: absolute;
-  top: 54%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 6.4rem;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
   font-family: "Playfair Display";
   text-align: left;
+}
+
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
   margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+.title {
+  position: relative;
+  font-size: 6.4rem;
+  margin: 5px 0 25px 0;
   padding: 0;
 }
 .image {
@@ -32,20 +44,22 @@
   color: #ffffffff;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   text-decoration: none;
-  min-width: 180px;
-  margin: 24px 0;
+  /* min-width: 180px; */
   border: solid 1px transparent;
-  border-radius: 4px;
-  padding: 0.7em 0.8em;
+  padding: 1.2em 2.3em;
   cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.03em;
 }
 
 .icon {
   transition: transform;
   animation: jumpingArrow 4s;
   animation-iteration-count: infinite;
+  margin-left: 1.1em;
 }
 
 @keyframes jumpingArrow {

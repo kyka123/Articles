@@ -1,14 +1,12 @@
 .main {
   background-image: url(/assets/footer.jpg);
   background-size: cover;
-  background-position: top;
-  padding: 3.5rem 0 2rem 0;
+  background-position: center bottom;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow: hidden;
   height: 154px;
   width: 100%;
 }
@@ -23,9 +21,9 @@
 }
 
 .icon {
-  height: 36px;
-  width: 36px;
-  margin: 20px;
+  height: 30px;
+  width: 30px;
+  margin: 0 20px 0 20px;
 }
 
 .a {
@@ -33,5 +31,9 @@
 }
 
 .text {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 20px 0 0 0;
+  padding: 0;
 }

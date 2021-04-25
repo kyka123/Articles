@@ -3,12 +3,13 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const HeroSection = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.wrapper}>
       <img src="assets/hero.jpg" alt="IPG" className={styles.image} />
-      <div className={styles.centered}>
-        Nasze najlepsze artykuły
+      <div className={styles.container}>
+        <h3 className={styles.subtitle}>[ Naprawde Fajne ]</h3>
+        <h1 className={styles.title}>Nasze Najlepsze Artykuły</h1>
         <button className={styles.button}>
-          Zobacz najnowsze <IoIosArrowDown className={styles.icon} />
+          Zobacz Najnowsze <IoIosArrowDown className={styles.icon} />
         </button>
       </div>
     </div>
