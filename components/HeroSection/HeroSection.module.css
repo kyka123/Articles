@@ -14,6 +14,20 @@
   text-align: left;
 }
 
+@media (min-width: 950px) {
+  .container {
+    left: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: 0;
+  }
+}
+
 .subtitle {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -28,6 +42,13 @@
   margin: 5px 0 25px 0;
   padding: 0;
 }
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 9.6rem;
+  }
+}
+
 .image {
   position: absolute;
   display: block;
@@ -37,6 +58,7 @@
   height: 100%;
   object-fit: cover;
   object-position: right center;
+  filter: brightness(75%);
 }
 
 .button {
