@@ -12,6 +12,10 @@ const HeroSection = () => {
           Zobacz Najnowsze <IoIosArrowDown className={styles.icon} />
         </button>
       </div>
+      <div className={styles.scrollDown}>
+        <span className={styles.scrollDownText}>Scroll Down</span>
+        <span className={styles.arrow}></span>
+      </div>
     </div>
   );
 };

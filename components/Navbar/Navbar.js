@@ -2,54 +2,36 @@ import Link from "next/link";
 import styles from "./navbar.module.css";
 import { useState, useEffect } from "react";
 
-const Navbar = ({scrol}) => {
+const Navbar = () => {
   const [navbarBg, setNavbarBg] = useState(true);
 
+  const changeBackground = () => setNavbarBg(window.scrollY <= 65);
 
+  useEffect(changeBackground, []);
 
-  const changeBackground = () => {
-    if (window.scrollY >= 65) {
-      setNavbarBg(false);
-    } else {
-      setNavbarBg(true);
-    }
-  };
-  
   useEffect(() => {
     window.addEventListener("scroll", changeBackground);
-    changeBackground()
-    return () => {
-      window.removeEventListener("scroll", changeBackground);
-    };
+    return () => window.removeEventListener("scroll", changeBackground);
   }, []);
 
-
+  const secondary = !navbarBg ? styles.secondary : "";
+  const header = `${styles.header} ${secondary}`;
+  const link = `${styles.link} ${secondary}`;
   return (
-    <div
-      className={
-        navbarBg ? styles.header : `${styles.header} ${styles.headerBackground}`
-      }
-    >
-      <Link href="/">
-        <a
-          className={navbarBg ? `${styles.logo} ${styles.white}` : styles.logo}
-        >
-          Articles
-        </a>
-      </Link>
-      <ul className={styles.navLinks}>
-        <li className={styles.navLinksLink}>
-           <button className={styles.btn} onClick={scrol}>Kontakt</button>
-        </li>
-        <li>
+    <nav className={header}>
+      <ul className={styles.list}>
+        <li className={styles.listItem}>
           <Link href="/">
-            <button className={`${styles.btn} ${styles.colored}`}>
-              O Projekcie
-            </button>
+            <a className={link}>Strona główna</a>
+          </Link>
+        </li>
+        <li className={styles.listItem}>
+          <Link href="/about">
+            <a className={link}>O Projekcie</a>
           </Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 

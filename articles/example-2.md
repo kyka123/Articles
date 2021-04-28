@@ -1,9 +1,8 @@
 ---
-slug: example
-title: My First Blog
+title: My Second Blog
 date: 10.1.2020r.
 author: Jan Kowalski
-image: articleCard.jpg
+image: hero.jpg
 ---
 
 # h1
@@ -13,4 +12,3 @@ image: articleCard.jpg
 ### h3
 
 Normal text
-

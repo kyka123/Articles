@@ -1,21 +1,31 @@
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
-import styles from './slug.module.css'
 
-const Article = ({ content, data }) =>{
-    const frontmatter = data;
+import styles from "./slug.module.css";
+
+import Layout from "../../components/Layout/Layout";
+///^[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*$/
+
+const Article = ({ content, data }) => {
+  const frontmatter = data;
 
   return (
-    <>
-    <div className={styles.wrapper}>
-      <h1>{frontmatter.title}</h1>
-      <h3>{frontmatter.description}</h3>
-      <ReactMarkdown escapeHtml={true} children={content} />
+    <Layout>
+      <div className={styles.wrapper}>
+        <div className={styles.imageWrapper}>
+          <img src={`/assets/${frontmatter.image}`} className={styles.image} />
+          <h1 className={styles.title}>{frontmatter.title}</h1>
+          <h3 className={styles.details}>
+            [ {frontmatter.date}, {frontmatter.author} ]
+          </h3>
+        </div>
+        <div className={styles.content}>
+          <ReactMarkdown escapeHtml={true} children={content} />
+        </div>
       </div>
-    </>
+    </Layout>
   );
-
-}
+};
 
 Article.getInitialProps = async (context) => {
   const { slug } = context.query;
@@ -26,5 +36,4 @@ Article.getInitialProps = async (context) => {
   return { ...data };
 };
 
-
-export default Article
+export default Article;

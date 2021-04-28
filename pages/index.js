@@ -1,13 +1,9 @@
 import matter from "gray-matter";
 
-
 import HeroSection from "../components/HeroSection/HeroSection.js";
 import Grid from "../components/Grid/Grid.js";
-import ArticleCard from "../components/ArticleCard/ArticleCard.js"
+import ArticleCard from "../components/ArticleCard/ArticleCard.js";
 import Layout from "../components/Layout/Layout";
-
-
-const examples = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 
 export async function getStaticProps() {
   const fs = require("fs");
@@ -22,33 +18,39 @@ export async function getStaticProps() {
       encoding: "utf-8",
     });
 
-    return rawContent;
+    return { rawContent, slug: blog.slice(0, -3) };
   });
 
   return {
     props: {
-      data: data,
+      data,
     },
   };
 }
 
-const Home = ({data}) => {
-  const RealData = data.map((blog) => matter(blog));
-  const ListItems = RealData.map((listItem) => listItem.data);
+const Home = ({ data }) => {
+  const RealData = data.map(({ rawContent, slug }) => ({
+    ...matter(rawContent),
+    slug,
+  }));
 
-  return(
-  <div>
-    <Layout withNav title="Strona Główna">
-      <HeroSection></HeroSection>
-      <Grid>
-      {ListItems.map(({title, image}, index) => (
-        <ArticleCard key={index} title={title} image={image}/>
-      ))}
-      </Grid>
-    </Layout>
-  </div>
-)}
+  const ListItems = RealData.map((listItem) => ({
+    ...listItem.data,
+    slug: listItem.slug,
+  }));
 
-
+  return (
+    <div>
+      <Layout withNav title="Strona Główna">
+        <HeroSection></HeroSection>
+        <Grid>
+          {ListItems.map(({ title, image, slug }, index) => (
+            <ArticleCard key={index} title={title} image={image} slug={slug} />
+          ))}
+        </Grid>
+      </Layout>
+    </div>
+  );
+};
 
 export default Home;

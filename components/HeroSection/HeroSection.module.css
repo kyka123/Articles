@@ -20,7 +20,6 @@
   }
 }
 
-
 @media (min-width: 950px) {
   .container {
     left: 200px;
@@ -41,7 +40,7 @@
   margin: 0;
   padding: 0;
   font-size: 1.4rem;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .title {
@@ -49,7 +48,6 @@
   margin: 5px 0 25px 0;
   padding: 0;
   font-size: 5rem;
-
 }
 
 @media (min-width: 350px) {
@@ -58,13 +56,11 @@
   }
 }
 
-
 @media (min-width: 1200px) {
   .title {
     font-size: 9.6rem;
   }
 }
-
 
 .image {
   position: absolute;
@@ -76,13 +72,11 @@
   object-fit: cover;
   object-position: right center;
   filter: brightness(70%);
-
 }
-@media(max-width: 380px){
-.image{
-  filter: brightness(50%);
-
-}
+@media (max-width: 380px) {
+  .image {
+    filter: brightness(50%);
+  }
 }
 
 .button {
@@ -120,4 +114,110 @@
   to {
     transform: translateY(4px);
   }
+}
+
+.scrollDown {
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  .scrollDown {
+    display: none;
+  }
+}
+
+.scrollDown:hover .scrollDownText {
+  transform: translate(2px, -67px) rotate(90deg);
+}
+
+.arrow {
+  position: relative;
+  height: 60px;
+  animation: resizeArrow 4s;
+  animation-iteration-count: infinite;
+  transform-origin: top;
+}
+
+@keyframes resizeArrow {
+  from {
+    transform: scaleY(1.2);
+  }
+
+  75% {
+    transform: scaleY(0.6);
+  }
+
+  to {
+    transform: scaleY(1.2);
+  }
+}
+
+.arrow,
+.arrow::after,
+.arrow::before {
+  display: block;
+  width: 1.5px;
+  background-color: #fff;
+}
+
+.arrow::after,
+.arrow::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 12px;
+  transform-origin: bottom;
+}
+
+.arrow::after {
+  transform: rotate(45deg);
+  animation: rotateAfterArrow 4s;
+  animation-iteration-count: infinite;
+}
+.arrow::before {
+  animation: rotateBeforeArrow 4s;
+  animation-iteration-count: infinite;
+
+  transform: rotate(-45deg);
+}
+
+@keyframes rotateAfterArrow {
+  from {
+    transform: rotate(0);
+  }
+
+  75% {
+    transform: rotate(-45deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes rotateBeforeArrow {
+  from {
+    transform: rotate(0);
+  }
+
+  75% {
+    transform: rotate(45deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+.scrollDownText {
+  font-size: 1rem;
+  display: block;
+  transform-origin: left center;
+  transform: translate(2px, -70px) rotate(90deg);
+  transition: transform 0.3s;
 }
