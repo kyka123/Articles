@@ -22,9 +22,16 @@ const Navbar = () => {
       <ul className={styles.list}>
         <li className={styles.listItem}>
           <Link href="/">
+            <a className={`${link} ${styles.logo}`}>Articles</a>
+          </Link>
+        </li>
+
+        <li className={styles.listItem}>
+          <Link href="/">
             <a className={link}>Strona główna</a>
           </Link>
         </li>
+
         <li className={styles.listItem}>
           <Link href="/about">
             <a className={link}>O Projekcie</a>

@@ -6,16 +6,22 @@ import Link from "next/link";
 
 const ArticleCard = ({ image = "", title = "", slug, ...props }) => (
   <Link href={`/articles/${slug}`}>
-    <div className={styles.wrapper} {...props}>
-      <Image src={`/assets/${image}`} className={styles.image} layout="fill" />
-      {/* <Image
+    <a>
+      <div className={styles.wrapper} {...props}>
+        <Image
+          src={`/assets/${image}`}
+          className={styles.image}
+          layout="fill"
+        />
+        {/* <Image
         src={image}
         alt="Picture of the author"
         layout="fill"
         className={styles.image}
         /> */}
-      <h3 className={styles.title}>{title}</h3>
-    </div>
+        <h3 className={styles.title}>{title}</h3>
+      </div>
+    </a>
   </Link>
 );
 
