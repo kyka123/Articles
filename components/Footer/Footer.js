@@ -10,7 +10,7 @@ import {
 
 const Footer = ({ reff }) => {
   return (
-    <div className={styles.main}>
+    <footer className={styles.main}>
       <span ref={reff}></span>
       <div className={styles.icons_text}>
         <div className={styles.icons}>
@@ -39,7 +39,7 @@ const Footer = ({ reff }) => {
 
         <p className={styles.text}>© 2021. All rights reserved</p>
       </div>
-    </div>
+    </footer>
   );
 };
 

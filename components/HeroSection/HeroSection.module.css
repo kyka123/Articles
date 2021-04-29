@@ -122,6 +122,11 @@
   left: 40px;
   padding: 20px;
   cursor: pointer;
+  display: block;
+  background: transparent;
+  border: none;
+  font-family: "Montserrat";
+  color: #ffffffff;
 }
 
 @media (max-width: 950px) {

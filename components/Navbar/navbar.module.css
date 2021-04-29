@@ -24,12 +24,6 @@
   opacity: 1;
 }
 
-@media (max-width: 950px) {
-  .header {
-    padding: 10px;
-  }
-}
-
 .list {
   list-style: none;
   display: grid;
@@ -39,9 +33,6 @@
   grid-gap: 20px;
   margin: 0;
   padding: 0;
-}
-
-.listItem {
 }
 
 .link {
@@ -58,4 +49,19 @@
 
 .link.logo {
   font-weight: 600;
+}
+
+@media (max-width: 950px) {
+  .header {
+    padding: 10px;
+  }
+  .link {
+    font-size: 1.4rem;
+  }
+  .listItem:nth-child(2) {
+    display: none !important;
+  }
+  .list {
+    grid-gap: 0;
+  }
 }

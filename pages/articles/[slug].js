@@ -4,13 +4,23 @@ import ReactMarkdown from "react-markdown";
 import styles from "./slug.module.css";
 
 import Layout from "../../components/Layout/Layout";
-///^[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*$/
+
+//NOTE ^[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*$/
+//NOTE array.sort(() => 0.5 - Math.random()).slice(0,1)
 
 const Article = ({ content, data }) => {
   const frontmatter = data;
 
+  const components = {
+    a: ({ href, children }) => (
+      <a href={href} target="_blanc">
+        {children}
+      </a>
+    ),
+  };
+
   return (
-    <Layout>
+    <Layout title={data.title}>
       <div className={styles.wrapper}>
         <div className={styles.imageWrapper}>
           <img src={`/assets/${frontmatter.image}`} className={styles.image} />
@@ -20,7 +30,11 @@ const Article = ({ content, data }) => {
           </h3>
         </div>
         <div className={styles.content}>
-          <ReactMarkdown escapeHtml={true} children={content} />
+          <ReactMarkdown
+            escapeHtml={true}
+            children={content}
+            components={components}
+          />
         </div>
       </div>
     </Layout>

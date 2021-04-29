@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection/HeroSection.js";
 import Grid from "../components/Grid/Grid.js";
 import ArticleCard from "../components/ArticleCard/ArticleCard.js";
 import Layout from "../components/Layout/Layout";
+import { useRef } from "react";
 
 export async function getStaticProps() {
   const fs = require("fs");
@@ -29,6 +30,7 @@ export async function getStaticProps() {
 }
 
 const Home = ({ data }) => {
+  const gridRef = useRef(null);
   const RealData = data.map(({ rawContent, slug }) => ({
     ...matter(rawContent),
     slug,
@@ -42,8 +44,8 @@ const Home = ({ data }) => {
   return (
     <div>
       <Layout withNav title="Strona Główna">
-        <HeroSection></HeroSection>
-        <Grid>
+        <HeroSection gridRef={gridRef} />
+        <Grid gridRef={gridRef}>
           {ListItems.map(({ title, image, slug }, index) => (
             <ArticleCard key={index} title={title} image={image} slug={slug} />
           ))}
