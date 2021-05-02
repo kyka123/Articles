@@ -1,5 +1,7 @@
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
+import { IoIosArrowBack } from "react-icons/io";
+import Link from 'next/link';
 
 import styles from "./slug.module.css";
 
@@ -21,14 +23,22 @@ const Article = ({ content, data }) => {
 
   return (
     <Layout title={data.title}>
-      <div className={styles.wrapper}>
-        <div className={styles.imageWrapper}>
+    <Link href="/">
+     <a className={styles.button} >
+        <IoIosArrowBack className={styles.buttonIcon}/>
+        <span className={styles.buttonContent}>Back</span>
+      </a>
+      </Link>
+      <div className={styles.imageWrapper}>
           <img src={`/assets/${frontmatter.image}`} className={styles.image} />
           <h1 className={styles.title}>{frontmatter.title}</h1>
           <h3 className={styles.details}>
             [ {frontmatter.date}, {frontmatter.author} ]
           </h3>
         </div>
+
+      <div className={styles.wrapper}>
+       
         <div className={styles.content}>
           <ReactMarkdown
             escapeHtml={true}

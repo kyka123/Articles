@@ -18,7 +18,7 @@
 
 .title {
   color: rgb(255, 255, 255);
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   bottom: 20px;
 }
 
@@ -41,10 +41,12 @@
   .details {
     left: 30px;
     right: 30px;
+    padding: 0 50px;
+  
   }
 
   .title {
-    font-size: 3rem;
+    font-size: 5rem;
     bottom: 35px;
   }
 
@@ -64,7 +66,7 @@
 .imageWrapper::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 4px;
   left: 0;
   width: 100%;
   height: 100%;
@@ -80,4 +82,77 @@
   max-height: 50vh;
   min-height: 30vh;
   object-fit: cover;
+}
+
+
+.button{
+position: absolute;
+top: 15px;
+left: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0.5em;
+z-index: 1000;
+border: none;
+background-color: #fff;
+font-family: 'Montserrat';
+transition: transform .2s;
+border: 0;
+color: black;
+text-decoration: none;
+}
+
+.button::after{
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: opacity .2s;
+  cursor: pointer;
+
+}
+
+.button:hover::after{
+  opacity: 0;
+}
+
+.button:hover{
+  transform: translate(0.5px, 1.5px);
+}
+
+.buttonContent{
+  display: none;
+  font-weight: 500;
+  position: relative;
+  top: 0.75px;
+  margin-right: 6px;
+}
+
+.buttonIcon{
+  position: relative;
+  right: 1px;
+/* width: 20px;
+height: 20px; */
+font-size: 2rem;
+}
+
+
+@media(min-width: 950px){
+  .buttonContent{
+    display: block;
+  }
+  .button{
+    padding: 0.8em 1.6em;
+    top: 30px;
+    left: 30px;
+  }
+  .buttonIcon{
+    margin-right: 10px;
+
+  }
 }

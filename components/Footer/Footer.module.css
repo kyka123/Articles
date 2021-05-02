@@ -1,7 +1,5 @@
 .main {
-  background-image: url(/assets/footer.jpg);
-  background-size: cover;
-  background-position: center bottom;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +11,13 @@
   position: relative;
 }
 
-.main::after {
+.main.background{
+  background-image: url(/assets/footer.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.background::after {
   content: "";
   position: absolute;
   top: 0;

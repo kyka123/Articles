@@ -31,6 +31,7 @@ export async function getStaticProps() {
 
 const Home = ({ data }) => {
   const gridRef = useRef(null);
+  const footerRef = useRef(null);
   const RealData = data.map(({ rawContent, slug }) => ({
     ...matter(rawContent),
     slug,
@@ -43,8 +44,8 @@ const Home = ({ data }) => {
 
   return (
     <div>
-      <Layout withNav title="Strona Główna">
-        <HeroSection gridRef={gridRef} />
+      <Layout withNav title="Strona Główna" footerRef={footerRef}>
+        <HeroSection footerRef={footerRef} gridRef={gridRef} />
         <Grid gridRef={gridRef}>
           {ListItems.map(({ title, image, slug }, index) => (
             <ArticleCard key={index} title={title} image={image} slug={slug} />

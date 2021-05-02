@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar";
 
 import Head from "next/head";
 
-const Layout = ({ children, title = "Strona Główna", withNav }) => {
+const Layout = ({ children, title = "Strona Główna", withNav, footerRef, transparentFooter }) => {
   return (
     <>
       <Head>
@@ -11,7 +11,7 @@ const Layout = ({ children, title = "Strona Główna", withNav }) => {
       </Head>
       {withNav ? <Navbar /> : ""}
       {children}
-      <Footer />
+      <Footer footerRef={footerRef || null} transparent={transparentFooter} />
     </>
   );
 };

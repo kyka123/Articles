@@ -11,6 +11,8 @@
   transform: translateX(-50%);
 }
 
+
+
 @media (min-width: 768px) {
   .grid {
     grid-gap: 30px;

@@ -8,10 +8,10 @@ import {
   IoIosPin,
 } from "react-icons/io";
 
-const Footer = ({ reff }) => {
+const Footer = ({ footerRef, transparent }) => {
+
   return (
-    <footer className={styles.main}>
-      <span ref={reff}></span>
+    <footer className={`${styles.main} ${!transparent ? styles.background : ''}`} ref={footerRef} >
       <div className={styles.icons_text}>
         <div className={styles.icons}>
           <a
