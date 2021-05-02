@@ -47,6 +47,8 @@ button.link{
   background-color: transparent;
   border: none;
   font-family: 'Montserrat';
+  margin: 0;
+  padding: 0;
 }
 
 .link.secondary {
@@ -66,10 +68,9 @@ button.link{
   .link {
     font-size: 1.4rem;
   }
-  .listItem:nth-child(2) {
-    display: none !important;
-  }
-  .list {
-    grid-gap: 0;
+
+ 
+  .header{
+    padding: 20px 25px ;
   }
 }
