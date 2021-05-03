@@ -26,7 +26,7 @@ const Article = ({ content, data }) => {
     <Link href="/">
      <a className={styles.button} >
         <IoIosArrowBack className={styles.buttonIcon}/>
-        <span className={styles.buttonContent}>Back</span>
+        <span className={styles.buttonContent}>Wróć</span>
       </a>
       </Link>
       <div className={styles.imageWrapper}>
