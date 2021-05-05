@@ -1,17 +1,20 @@
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import { IoIosArrowBack } from "react-icons/io";
-import Link from 'next/link';
+import Link from "next/link";
 
 import styles from "./slug.module.css";
 
 import Layout from "../../components/Layout/Layout";
+import { useEffect, useRef } from "react";
 
 //NOTE ^[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*$/
-//NOTE array.sort(() => 0.5 - Math.random()).slice(0,1)
 
-const Article = ({ content, data }) => {
+const Article = ({ rawData, others }) => {
+  const { data, content } = matter(rawData);
   const frontmatter = data;
+
+  const randomOthers = others.sort(() => 0.5 - Math.random()).slice(0, 3);
 
   const components = {
     a: ({ href, children }) => (
@@ -21,43 +24,132 @@ const Article = ({ content, data }) => {
     ),
   };
 
+  const wrapperRef = useRef(null);
+
+  const setFeature = () => {
+    if (!wrapperRef.current) return;
+
+    const scrollPositin = window.scrollY;
+    const [button, image, title, detail] = wrapperRef.current.children;
+    [title, detail].map((element) => {
+      element.style.transform = `translateY(${scrollPositin / 4}px)`;
+      element.style.opacity = `${100 - scrollPositin / 5}%`;
+      element.style.filter = `blur(${scrollPositin / 200}px)`;
+    });
+
+    image.style.transform = `translateY(${scrollPositin / 2}px)`;
+    if (scrollPositin > 20) {
+      button.style.transform = `translateY(-500px)`;
+    } else {
+      button.style.transform = `translateY(0)`;
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("scroll", setFeature);
+    return () => {
+      document.removeEventListener("scroll", setFeature);
+    };
+  }, []);
+
+  useEffect(setFeature, []);
+
   return (
     <Layout title={data.title}>
-    <Link href="/">
-     <a className={styles.button} >
-        <IoIosArrowBack className={styles.buttonIcon}/>
-        <span className={styles.buttonContent}>Wróć</span>
-      </a>
-      </Link>
-      <div className={styles.imageWrapper}>
-          <img src={`/assets/${frontmatter.image}`} className={styles.image} />
+      <div className={styles.wrapper}>
+        <div className={styles.imageWrapper} ref={wrapperRef}>
+          <Link href="/">
+            <a className={styles.button}>
+              <IoIosArrowBack className={styles.buttonIcon} />
+              <span className={styles.buttonContent}>Wróć</span>
+            </a>
+          </Link>
+          <img
+            src={`/assets/${frontmatter.image}`}
+            className={styles.image}
+            alt={data.title}
+          />
           <h1 className={styles.title}>{frontmatter.title}</h1>
-          <h3 className={styles.details}>
+          <h2 className={styles.details}>
             [ {frontmatter.date}, {frontmatter.author} ]
-          </h3>
+          </h2>
         </div>
 
-      <div className={styles.wrapper}>
-       
         <div className={styles.content}>
           <ReactMarkdown
             escapeHtml={true}
             children={content}
             components={components}
           />
+          <p className={styles.author}>Autor: {frontmatter.author}</p>
+          <p>
+            <b>Zobacz także</b>
+          </p>
+
+          <ul>
+            {randomOthers.map(({ title, slug }) => {
+              return (
+                <li key={slug}>
+                  <Link href={`/articles/${slug}`}>
+                    <a className={styles.link}>{title}</a>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </Layout>
   );
 };
 
-Article.getInitialProps = async (context) => {
-  const { slug } = context.query;
+export async function getStaticProps(context) {
+  const fs = require("fs");
+  const { slug } = context.params;
+
+  const files = fs.readdirSync(`${process.cwd()}/articles`, "utf-8");
+
+  const blogs = files.filter((fn) => fn.endsWith(".md"));
+
+  const others = blogs
+    .map((blog) => {
+      const path = `${process.cwd()}/articles/${blog}`;
+      const rawContent = fs.readFileSync(path, {
+        encoding: "utf-8",
+      });
+
+      const {
+        data: { title },
+      } = matter(rawContent);
+      return { title, slug: blog.slice(0, -3) };
+    })
+    .filter(({ slug: currSlug }) => slug !== currSlug);
 
   const content = await import(`../../articles/${slug}.md`);
-  const data = matter(content.default);
 
-  return { ...data };
-};
+  const rawData = content.default;
+
+  return { props: { rawData, others } };
+}
+
+export async function getStaticPaths() {
+  const fs = require("fs");
+
+  const files = fs.readdirSync(`${process.cwd()}/articles`, "utf-8");
+
+  const blogs = files.filter((fn) => fn.endsWith(".md"));
+
+  const slugs = blogs.map((blog) => {
+    return { params: { slug: blog.slice(0, -3) } };
+  });
+
+  return { paths: slugs, fallback: false };
+}
+
+// Article.getInitialProps = async (context) => {
+//   const { slug } = context.query;
+//   const content = await import(`../../articles/${slug}.md`);
+//   const data = matter(content.default);
+// };
 
 export default Article;

@@ -34,6 +34,7 @@
 .content {
   width: 100%;
   padding: 15px;
+  background-color: #fff;
 }
 
 @media (min-width: 950px) {
@@ -41,8 +42,7 @@
   .details {
     left: 30px;
     right: 30px;
-    padding: 0 50px;
-  
+    /* padding: 0 50px; */
   }
 
   .title {
@@ -61,12 +61,14 @@
 
 .imageWrapper {
   position: relative;
+  background-color: #333;
+  z-index: -1;
 }
 
 .imageWrapper::after {
   content: "";
   position: absolute;
-  bottom: 4px;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -76,7 +78,7 @@
 
 .image {
   position: relative;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   max-height: 50vh;
@@ -84,27 +86,26 @@
   object-fit: cover;
 }
 
-
-.button{
-position: absolute;
-top: 15px;
-left: 15px;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 0.5em;
-z-index: 1000;
-border: none;
-background-color: #fff;
-font-family: 'Montserrat';
-transition: transform .2s;
-border: 0;
-color: black;
-text-decoration: none;
+.button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  z-index: 1000;
+  border: none;
+  background-color: #fff;
+  font-family: "Montserrat";
+  transition: transform 0.2s;
+  border: 0;
+  color: black;
+  text-decoration: none;
 }
 
-.button::after{
-  content: '';
+.button::after {
+  content: "";
   position: absolute;
   display: block;
   top: 0;
@@ -112,20 +113,19 @@ text-decoration: none;
   width: 100%;
   height: 100%;
   box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.25);
-  transition: opacity .2s;
+  transition: opacity 0.2s;
   cursor: pointer;
-
 }
 
-.button:hover::after{
+.button:hover::after {
   opacity: 0;
 }
 
-.button:hover{
-  transform: translate(0.5px, 1.5px);
+.button:hover {
+  transform: translate(0.5px, 1.5px) !important;
 }
 
-.buttonContent{
+.buttonContent {
   display: none;
   font-weight: 500;
   position: relative;
@@ -133,26 +133,33 @@ text-decoration: none;
   margin-right: 6px;
 }
 
-.buttonIcon{
+.buttonIcon {
   position: relative;
   right: 1px;
-/* width: 20px;
+  /* width: 20px;
 height: 20px; */
-font-size: 2rem;
+  font-size: 2rem;
 }
 
-
-@media(min-width: 950px){
-  .buttonContent{
+@media (min-width: 950px) {
+  .buttonContent {
     display: block;
   }
-  .button{
+  .button {
     padding: 0.8em 1.6em;
     top: 30px;
     left: 30px;
   }
-  .buttonIcon{
+  .buttonIcon {
     margin-right: 10px;
-
   }
+}
+
+.author {
+  color: #555;
+  font-style: italic;
+}
+
+.link {
+  color: #333;
 }

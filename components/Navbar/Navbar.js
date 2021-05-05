@@ -7,14 +7,12 @@ const Navbar = () => {
 
   const changeBackground = () => setNavbarBg(window.scrollY <= 65);
 
-
   const scrollToDown = () => {
     window.scrollTo({
       top: document.body.scrollHeight,
-      behavior: 'smooth',
-    })
-  }
-
+      behavior: "smooth",
+    });
+  };
 
   useEffect(changeBackground, []);
 
@@ -22,8 +20,6 @@ const Navbar = () => {
     window.addEventListener("scroll", changeBackground);
     return () => window.removeEventListener("scroll", changeBackground);
   }, []);
-
-
 
   const secondary = !navbarBg ? styles.secondary : "";
   const header = `${styles.header} ${secondary}`;
@@ -38,7 +34,9 @@ const Navbar = () => {
         </li>
 
         <li className={styles.listItem}>
-            <button onClick={scrollToDown} className={link}>Kontakt</button>
+          <button onClick={scrollToDown} className={link}>
+            Kontakt
+          </button>
         </li>
 
         <li className={styles.listItem}>

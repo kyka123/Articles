@@ -6,10 +6,10 @@ import Image from "next/image";
 const HeroSection = () => {
   const scrollToDown = () => {
     window.scrollTo({
-      top: window.screen.height-59,
-      behavior: 'smooth',
-    })
-  }
+      top: window.screen.height - 59,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -18,6 +18,8 @@ const HeroSection = () => {
         src="/assets/hero.jpg"
         alt="IPG"
         className={styles.image}
+        loading="eager"
+        priority
       />
       <header className={styles.container}>
         <h3 className={styles.subtitle}>[ ALO 2A ]</h3>
