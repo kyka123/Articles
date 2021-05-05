@@ -28,9 +28,21 @@ const Article = ({ rawData, others }) => {
 
   const setFeature = () => {
     if (!wrapperRef.current) return;
-
     const scrollPositin = window.scrollY;
     const [button, image, title, detail] = wrapperRef.current.children;
+    if (scrollPositin > 20) {
+      button.style.transform = `translateY(-500px)`;
+    } else {
+      button.style.transform = `translateY(0)`;
+    }
+
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    )
+      return;
+
     [title, detail].map((element) => {
       element.style.transform = `translateY(${scrollPositin / 4}px)`;
       element.style.opacity = `${100 - scrollPositin / 5}%`;
@@ -38,11 +50,6 @@ const Article = ({ rawData, others }) => {
     });
 
     image.style.transform = `translateY(${scrollPositin / 2}px)`;
-    if (scrollPositin > 20) {
-      button.style.transform = `translateY(-500px)`;
-    } else {
-      button.style.transform = `translateY(0)`;
-    }
   };
 
   useEffect(() => {
