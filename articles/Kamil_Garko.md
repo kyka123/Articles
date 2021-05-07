@@ -2,7 +2,7 @@
 title: Dzisiejsza fotografia czyli era fotografii smartfonowej.
 date: 3 maj 2021
 author: Kamil Garko
-image: articles_photo/Garko.jpeg
+image: articles_photo/Garko.jpg
 ---
 
 
