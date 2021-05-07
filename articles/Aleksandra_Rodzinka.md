@@ -8,7 +8,7 @@ image: articles_photo/Bored.jpeg
 
 ### Uważasz, że bardziej znudzonym niż ty w tym momencie nie można być? Wszystkie zajęcia wydają się niewystarczająco atrakcyjne, żeby się nimi zająć? Udowodnię ci, że się mylisz (przede wszystkim dlatego, że czytasz właśnie mój artykuł) oraz że istnieją aktywności, które potrafią spotęgować już istniejące poczucie nudy.
 
-### Wpadając w pułapkę nudy, próbujemy znaleźć zajęcie, które nas od niej uwolni. Nigdy odwrotnie. Nikt nie próbuje wymyślić czegoś, co znudziłoby go jeszcze bardziej. A przecież właśnie wtedy można uświadomić sobie, że w sumie to nasza nuda nie jest jeszcze najgorsza, że zawsze może być gorzej. W tym momencie powinniśmy z założenia poczuć się lepiej.
+Wpadając w pułapkę nudy, próbujemy znaleźć zajęcie, które nas od niej uwolni. Nigdy odwrotnie. Nikt nie próbuje wymyślić czegoś, co znudziłoby go jeszcze bardziej. A przecież właśnie wtedy można uświadomić sobie, że w sumie to nasza nuda nie jest jeszcze najgorsza, że zawsze może być gorzej. W tym momencie powinniśmy z założenia poczuć się lepiej.
 
 
 

@@ -1,10 +1,12 @@
 ---
-title: Ocena oraz Informacje na temat jednego z najpopularniejszych Amerykańskich seriali- Breaking Bad
+title: Ocena oraz Informacje - Breaking Bad
 date: 7 maj 2021
 author: Oskar Bilski
 image: articles_photo/bilski.jpg
 ---
 
+
+## Ocena oraz Informacje na temat jednego z najpopularniejszych Amerykańskich seriali - Breaking Bad
 
 ## Breaking Bad czyli wysoko oceniany amerykański serial telewizyjny  z gatunku dramatu kryminalnego przedstawia zmianę stylu życia nauczyciela chemii po zachorowaniu na raka.
 
