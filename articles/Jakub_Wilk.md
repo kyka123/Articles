@@ -6,7 +6,7 @@ image: articles_photo/Jordan.jpg
 ---
 
 
-## Możemy zauważyć, że w szczególności młodzi ludzie zwracają coraz większa uwagę na to co wkładają na swoje nogi. Proces ten w dzisiejszych czasach zamieniła się w pewną kulturę. Jak do tego doszło i dlaczego są to akurat buty?
+## Możemy zauważyć, że w szczególności młodzi ludzie zwracają coraz większa uwagę na to co wkładają na swoje nogi. Proces ten w dzisiejszych czasach zamienia się w pewną kulturę. Jak do tego doszło i dlaczego są to akurat buty?
 
 
 ## Powstanie
