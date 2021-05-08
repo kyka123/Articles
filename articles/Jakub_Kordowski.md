@@ -1,5 +1,5 @@
 ---
-title: Planujesz kupno używanego motocykla? Sprawdź na co zwrócić uwagę .
+title: Planujesz kupno używanego motocykla? Sprawdź na co zwrócić uwagę.
 date: 8 maj 2021
 author: Jakub Kordowski
 image: articles_photo/kordos.jpg
