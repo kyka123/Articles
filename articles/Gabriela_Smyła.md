@@ -28,22 +28,41 @@ Pod koniec kwietnia na oficjalnym kanale BANGTANTV, mogliśmy zobaczyć niespodz
 ## Czego się spodziewać?
 
 Po godzinnej zapowiedzi wytwórnia podzieliła się z nami kilkoma dodatkowymi informacjami na temat nadchodzącego utworu. Zdradzają nam między innymi, że nowy singiel BTS „Butter” zostanie wydany w koreańskich i międzynarodowych serwisach muzycznych już 21 maja 2021 roku. O klimacie utworu możemy dowiedzieć się, że jest przepełniony niepowtarzalnym urokiem BTS, a także wtopi się w serca wszystkich ARMY. Możemy również spodziewać się fizycznego singla „Butter”, który trafi tego lata do sklepów w Korei i na całym świecie. Na końcu BIGHIT dziękuje ARMY za nieustające przywiązanie do BTS i proszą o wsparcie oraz dobry odbiór nowego singla. Pełny artykuł w języku koreańskim, angielskim, japońskim oraz chińskim znajdziecie na weverse -> https://www.weverse.io/bts/notices/1020 
+
 Dodatkowo, niektórzy radiowcy w ostatnich dniach dostali przedpremierowo mp3 do utworu „Butter”. Alex Waters z radia Waters On Air odpowiedział na kilka pytań fanów na temat nowej piosenki. W swoim tweecie napisał „Butter to najlepsza piosenka, jaką kiedykolwiek zrobili. To jest tweet.”. Z odpowiedzi Alexa Watersa na pytania ARMY, możemy dowiedzieć się, że według niego nowa piosenka jest nie tylko lepsza od „Dynamite”, ale również trochę dojrzalsza, a także znajduje się w niej rap. Tutaj znajdziecie jego tweety -> https://twitter.com/WatersOnAir/status/1389953245183942663?fbclid=IwAR20lEQ4f2-ftcfx3C_pqj T1H5EMqcMeH87Za_XpdSfYuHAgi5POQwtePIA
 
 ## Zwykłe masło a może coś więcej?
-Już oficjalnie wiadomo, że zapowiedziany przez wytwórnie BIGHIT MUSIC singiel południowo koreańskiego zespołu BTS będzie nosił nazwę „Butter”, co tłumacząc na język polski oznacza nic innego jak masło. Fani jednak doszukują się głębszego znaczenia tego tytułu głównie w anglojęzycznych zwrotach. Między innymi fani zwracają uwagę na te kilka zwrotów:buttery – podlizujący siębutter up – podlizywać sięmelt one’s butter – podobać się komuśspread butter on – schlebiać komuśI am buttered – być pod wpływem alkoholu
+Już oficjalnie wiadomo, że zapowiedziany przez wytwórnie BIGHIT MUSIC singiel południowo koreańskiego zespołu BTS będzie nosił nazwę „Butter”, co tłumacząc na język polski oznacza nic innego jak masło. Fani jednak doszukują się głębszego znaczenia tego tytułu głównie w anglojęzycznych zwrotach. Między innymi fani zwracają uwagę na te kilka zwrotów:
+- buttery - podlizujący się
+- butter up – podlizywać się
+- melt one’s butter – podobać się komuś
+- spread butter on – schlebiać komuś
+- I am buttered – być pod wpływem alkoholu
+
 Kiedy ARMY zobaczyły prostokątną kostkę masła, u której powoli stapiają się rogi, przypomniały sobie o koreańskiej grze słów, o której kiedyś wspominał jeden z członków – Kim Namjoon znany pod pseudonimem RM. Koreańskie słowo 사람 saram (osoba), po zamianie litery m (tak zwanego prostokąta) w drugiej sylabie na ng (tak zwane koło), zmienia swoje znaczenie na 사랑 sarang (miłość), co może symbolizować właśnie roztapiające się masło na kształt serca. Tutaj wracamy do wcześniejszych anglojęzycznych zwrotów. Większość z nich odnosi się do prawienia komuś komplementów. To właśnie z tym może być związany symbol roztapiającego się serca. Rozpływa się ono pod wpływem miłych słów, chociaż zwroty te sugerują, że nie zawsze są one w stu procentach szczere. 
 
 ## Oczekiwanie na nowości
 
 K-pop znany jest głównie ze swoich konceptów, teledysków, a przede wszystkim zapowiedzi do tego wszystkiego. Nie inaczej jest w tym wypadku! Aby nie przegapić żadnego elementu zapowiedzi nowego utworu Bangtanów musisz koniecznie zapoznać się z poniższymi datami i kalendarzem stworzonym przez wytwórnie! Znajdziecie go tutaj -> https://ibighit.com/bts/kor/schedule/?year=2021&month=5&day=1
-2 maja – plakat promujący klipy do konceptu| już dostępne4/5/6 maja – klipy do konceptu | już dostępne10/12/13/14 maja – pierwsze promujące zdjęcia17 maja – drugie promujące zdjęcia19 maja – oficjalny zwiastun teledysku21 maja – wydanie piosenki oraz teledysku 13 PM KST (06:00 polskiego czasu)
+
+1. 2 maja – plakat promujący klipy do konceptu| już dostępne
+2. 4/5/6 maja – klipy do konceptu | już dostępne
+3. 10/12/13/14 maja – pierwsze promujące zdjęcia
+4. 17 maja – drugie promujące zdjęcia
+5. 19 maja – oficjalny zwiastun teledysku
+6. 21 maja – wydanie piosenki oraz teledysku 13 PM KST (06:00 polskiego czasu)
 
 ## Koncept klipów
 Plakat zapowiadający klipy do konceptu, to kolaż 7 obrazków – czyli dokładnie tylu ilu jest członków BTS. Co to oznacza? Oznacza to mianowicie tyle, że każdy obrazek z plakatu przypada na jednego z członków. Na dzień dzisiejszy, nie musimy spekulować, które zdjęcie należy do kogo, ponieważ wydane już klipy już nam to rozjaśniły. Wszystkie klipy znajdziecie na oficjalnej stronie BTS! https://ibighit.com/bts/eng/discog raphy/detail/butter.php 
 
 ARMY następująco przypasowały obrazek do każdego z członków:
-Żółte balony – JinKonfetti – RMNapój – JiminChleb z serduszkiem – JungkookAparat – SugaŻelki – VZniszczony lizak – J-Hope
+- Żółte balony – Jin
+- Konfetti – RM
+- Napój – Jimin
+- Chleb z serduszkiem – Jungkook
+- Aparat – Suga
+- Żelki – V
+- Zniszczony lizak – J-Hope
 
 Ponadto coraz więcej fanów po zobaczeniu plakatu spekuluje, że wizualnie cały comeback będzie w stylu Pop Art., czyli prądu artystycznego powstałego już w latach 50 XX wieku. W pracach tych często wykorzystywano elementy życia codziennego ukazane w artystyczny sposób. 
 

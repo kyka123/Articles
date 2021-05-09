@@ -47,6 +47,8 @@ FSF (Free Software Foundation) zaleca korzystanie z tych dystrybucji, jednak ist
 - Debian GNU/Linux
 - Ubuntu Linux
 - Linux Mint
+
+
 Polecane oprogramowanie dla komputerów osobistych:
 - GNU Icecat (zamiast Firefoxa) (Windows) (GNU/Linux)
 - Ungoogled Chromium (jeżeli GNU Icecat nie działa)
@@ -67,6 +69,10 @@ Polecane oprogramowanie dla komputerów osobistych:
 
 Pragnę podkreślić, że wolne oprogramowanie rozwija się szybciej niż kiedykolwiek i nadal ma ogromny potencjał na stawienie czoła monopolom Microsoftu i Google’a. Wolontariuszy i zwolenników pracujących nad nowymi wersjami oprogramowania nie maleje, zwłaszcza w dobie powszechnej inwigilacji.
 
-Przydatne linki:
+### Przydatne linki:
+
 https://privacytools.io/ – więcej alternatyw do popularnego oprogramowania
+
 https://privacy.sexy/ – usuwanie bloatware z Microsoft Windowsa/macOS’a
+
+
