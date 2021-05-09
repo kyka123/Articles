@@ -6,6 +6,14 @@
   top: 0;
   left: 0;
   z-index: -1;
+  transform: scale(1.1);
+  transition: transform 0.2s, opacity 0.2s;
+  z-index: 10;
+}
+
+.wrapper:hover .image {
+  transform: scale(1);
+  opacity: 0.6;
 }
 
 .wrapper {
@@ -17,6 +25,7 @@
   border-radius: 2px;
   overflow: hidden;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .wrapper::after {
@@ -28,6 +37,18 @@
   height: 100%;
   background: linear-gradient(to bottom, transparent 0%, black 100%);
   opacity: 0.8;
+  z-index: 50;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #444;
+  z-index: -1;
 }
 
 .title {
@@ -40,4 +61,7 @@
   z-index: 10;
   font-size: 1.8rem;
   letter-spacing: 0.03em;
+  transition: transform 0.2s;
+  transform-origin: left top;
+  z-index: 100;
 }

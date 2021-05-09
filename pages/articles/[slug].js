@@ -1,6 +1,6 @@
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
-import { IoIosArrowBack } from "react-icons/io";
+import { IoMdHome } from "react-icons/io";
 import Link from "next/link";
 
 import styles from "./slug.module.css";
@@ -67,8 +67,8 @@ const Article = ({ rawData, others }) => {
         <div className={styles.imageWrapper} ref={wrapperRef}>
           <Link href="/">
             <a className={styles.button}>
-              <IoIosArrowBack className={styles.buttonIcon} />
-              <span className={styles.buttonContent}>Wróć</span>
+              <IoMdHome className={styles.buttonIcon} />
+              <span className={styles.buttonContent}>Strona główna</span>
             </a>
           </Link>
           <img
