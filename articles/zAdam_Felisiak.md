@@ -14,10 +14,10 @@ image: articles_photo/adam.png
 Zanim przejdziemy dalej, chcę tylko wspomnieć, że mowa tu o „wolności” zdefiniowanej przez Richarda Stallmana, jednego z współtwórców systemu operacyjnego GNU oraz adwokata wolnego oprogramowania:
 
 Program jest wolnym oprogramowaniem jeśli użytkownicy programu mają cztery niezbędne wolności:
-Wolność do uruchamiania programu jak chcecie, w dowolnym celu (wolność 0).
-Wolność do analizowania, jak działa program i zmieniania go aby robił co i jak potrzebujecie (wolność 1). Warunkiem koniecznym jest dostęp do kodu źródłowego.
-Wolność do rozpowszechniania kopii, byście mogli pomóc innym (wolność 2).
-Wolność do udoskonalania programu i publicznego rozpowszechniania własnych ulepszeń, dzięki czemu może z nich skorzystać cała społeczność (wolność 3). Warunkiem koniecznym jest tu dostęp do kodu źródłowego.
+- Wolność do uruchamiania programu jak chcecie, w dowolnym celu (wolność 0).
+- Wolność do analizowania, jak działa program i zmieniania go aby robił co i jak potrzebujecie (wolność 1).Warunkiem koniecznym jest dostęp do kodu źródłowego.
+- Wolność do rozpowszechniania kopii, byście mogli pomóc innym (wolność 2).
+- Wolność do udoskonalania programu i publicznego rozpowszechniania własnych ulepszeń, dzięki czemu może z nich skorzystać cała społeczność (wolność 3). Warunkiem koniecznym jest tu dostęp do kodu źródłowego.
 (źródło: https://www.gnu.org/philosophy/free-sw.pl.html)
 
 Odpowiedzmy sobie teraz, ile z powyższych wolności jest spełnionych, korzystając z najpopularniejszych produktów:- Microsoft Windows
