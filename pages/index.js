@@ -1,10 +1,10 @@
+import { useRef } from "react";
 import matter from "gray-matter";
 
 import HeroSection from "../components/HeroSection/HeroSection.js";
 import Grid from "../components/Grid/Grid.js";
 import ArticleCard from "../components/ArticleCard/ArticleCard.js";
 import Layout from "../components/Layout/Layout";
-import { useRef } from "react";
 
 export async function getStaticProps() {
   const fs = require("fs");
