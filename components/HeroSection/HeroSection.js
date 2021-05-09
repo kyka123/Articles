@@ -10,6 +10,12 @@ const HeroSection = () => {
       behavior: "smooth",
     });
   };
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -28,7 +34,7 @@ const HeroSection = () => {
           Zobacz Najnowsze <IoIosArrowDown className={styles.icon} />
         </button>
       </header>
-      <button className={styles.scrollDown} onClick={scrollToDown}>
+      <button className={styles.scrollDown} onClick={scrollToBottom}>
         <span className={styles.scrollDownText}>Scroll Down</span>
         <span className={styles.arrow}></span>
       </button>
