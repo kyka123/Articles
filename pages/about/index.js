@@ -17,7 +17,7 @@ const About = () => (
         <p className={styles.text}>
           Zastosowaliśmy framework react/next.js, który pozwala na serwerowe
           renderowanie stron i dynamiczny routing po podstronach. Dzięki temu
-          projek mogł przyjąć formę wydajnej Single Page application (SPA)
+          projekt mogł przyjąć formę wydajnej Single Page Application (SPA)
         </p>
         <p className={styles.text}>
           Aplikacja webowa jest hostowana na platformie Vercel, gdzie
