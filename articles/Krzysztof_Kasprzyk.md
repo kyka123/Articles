@@ -31,8 +31,8 @@ W obecnych czasach za pomocą języka javascript możemy bez problemu tworzyć a
 - Serwerowe
 - Dynamiczne strony internetowe
 
-I wiele więcej. Na przykład strona którą teraz odwiedzasz jest oparta między innymi na javascript. Język ten obecnie ma wiele bilbiotek np. jQuery, frameworków np. react, angular, vue. Ostatnio nawet NASA zaczęła pracę nad projektem https://github.com/nasa/openmct opartym głównie na javascript.
+I wiele więcej. Na przykład strona którą teraz odwiedzasz jest oparta między innymi na javascript. Język ten obecnie ma wiele bilbiotek np. jQuery, frameworków np. react, angular, vue. Ostatnio nawet NASA zaczęła pracę nad [projektem](https://github.com/nasa/openmct) opartym głównie na javascript.
 
 ## Podsumowując
 
-Javascript to język, który z niczego stał się jednym z najpopularniejszych języków na świecie. Celem jego stworzenia była możliwość dodawania prostych efektów, czasem nie potrzebnych do stron internetowych. A teraz? Możemy zrobić pełnoprawne aplikacje na prawie każde urządzenie. Wykorzystuje go prawie każda strona internetowa, a według sondaża Stack Overflow https://stackoverflow.com/ 2019 jest to najpopularniejsza technologia wykorzystywana przez programistów.
+Javascript to język, który z niczego stał się jednym z najpopularniejszych języków na świecie. Celem jego stworzenia była możliwość dodawania prostych efektów, czasem nie potrzebnych do stron internetowych. A teraz? Możemy zrobić pełnoprawne aplikacje na prawie każde urządzenie. Wykorzystuje go prawie każda strona internetowa, a według sondaża [Stack Overflow](https://stackoverflow.com/) 2019 jest to najpopularniejsza technologia wykorzystywana przez programistów.
