@@ -8,7 +8,7 @@ const About = () => (
       <div className={styles.wrapper}>
         <h1 className={styles.title}>O Projekcie</h1>
         <p className={styles.text}>
-          Projekt ten został wykonany przez Jakuba Wilka, Bartosza Ślepeckiego i
+          Projekt ten został wykonany od zera przez Jakuba Wilka, Bartosza Ślepeckiego i
           Krzysztofa Kasprzyka. Chociaż zajęło nam to sporo czasu nie zdążyliśmy
           zaiplmementować wszystki funkcji. Czas nie pozwolił nam też na
           obeszerny redesign, dlatego strona ma w niektórych miejscach dość
